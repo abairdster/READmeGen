@@ -1,0 +1,23 @@
+{
+  "name": "readmegen",
+  "version": "1.0.0",
+  "description": "09 Node.js Homework: Professional README Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abairdster/READmeGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abairdster/READmeGen/issues"
+  },
+  "homepage": "https://github.com/abairdster/READmeGen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  }
+}
