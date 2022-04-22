@@ -39,7 +39,7 @@ const questions = [
     {
         type: "list",
         message: "What License did you use for this repository?",
-        choices: ["MIT", "GNU General Public License 2.0", "Apache License 2.0", "GNU General Public License 3.0"],
+        choices: ["MIT", "Apache License 2.0"],
         name: "license",
     },
     {
