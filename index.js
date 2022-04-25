@@ -3,14 +3,14 @@
 // use inquirer to ask questions
 // gather answers for readme file
 //us fs for readme
-
-// TODO: Include packages needed for this application
+//include packages needed for this application
 var inquirer = require("inquirer");
 var fs = require("fs");
 var generateMarkdown = require("./utils/generate");
-// var path = require("path");
-// TODO: Create an array of questions for user input
-const questions = [
+
+// create an array of questions for user input
+inquirer
+    .prompt([
     {
         type: "input",
         message: "What is a good Title for your project?",
@@ -62,16 +62,15 @@ const questions = [
         message: "What is your email address where users and contributors can send questions?",
         name: "email"
     },
-]
-inquirer
-.prompt(questions)
-.then((response) => {
+])    
+    
+    .then((response) => {
     return fs.writeFile("./output/README.md", generateMarkdown(response), function(err){
             if(err) {
+                console.log(err)
                 
-             console.log(err)
             }
         });
     });
 
-// switch case
+

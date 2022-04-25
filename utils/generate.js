@@ -1,3 +1,4 @@
+// open generateMarkdown for writing file
 function licenseBadge(data) {
         const licenseType = data.license[0];
         let licenseString = " "
@@ -11,7 +12,7 @@ function licenseBadge(data) {
         return licenseString
 };
 
-
+// open generateMarkdown for writing file
 function generateMarkdown(data) {
         return `# ${data.title}
 ## Table of Contents:
@@ -40,5 +41,4 @@ function generateMarkdown(data) {
 ## E-mail
         ${data.email}`
 }
-
 module.exports = generateMarkdown;
